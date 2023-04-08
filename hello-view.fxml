@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" style="-fx-background-image: url(&quot;B.jpg&quot;);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.puzzlegame.HelloController">
+    <Button fx:id="oj" layoutX="712.0" layoutY="386.0" onAction="#switchtoMenu" prefHeight="80.0" prefWidth="122.0" text="Start game" />
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.puzzlegame.HelloController">
+    <children>
+        <Button fx:id="right" layoutX="1500.0" layoutY="475.0" mnemonicParsing="false" onAction="#rightButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em;" text="--&gt;" visible="false" />
+        <Button fx:id="left" layoutX="50.0" layoutY="475.0" mnemonicParsing="false" onAction="#leftButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em;" text="&lt;--" visible="false" />
+        <Label fx:id="Text" text="A" />
+        <Button fx:id="door" layoutX="236.0" layoutY="187.0" mnemonicParsing="false" onAction="#door_control" prefHeight="543.0" prefWidth="225.0" style="-fx-background-color: transparent;" text="Door" visible="false" />
+        <Button fx:id="inventory1" layoutX="110.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory1_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="1" visible="false" />
+        <Button fx:id="inventory2" layoutX="212.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory2_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="2" visible="false" />
+        <Button fx:id="inventory3" layoutX="321.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory3_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="3" visible="false" />
+        <Button fx:id="inventory4" layoutX="423.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory4_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="4" visible="false" />
+        <Button fx:id="inventory5" layoutX="527.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory5_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="5" visible="false" />
+        <Button fx:id="inventory6" layoutX="632.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory6_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="6" visible="false" />
+        <Button fx:id="inventory7" layoutX="735.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory7_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="7" visible="false" />
+        <Button fx:id="inventory8" layoutX="839.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory8_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="8" visible="false" />
+        <Button fx:id="inventory9" layoutX="942.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory9_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="9" visible="false" />
+        <Button fx:id="inventory10" layoutX="1052.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory10_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="10" visible="false" />
+        <Button fx:id="inventory11" layoutX="1157.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory11_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="11" visible="false" />
+        <Button fx:id="inventory12" layoutX="1264.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory12_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="12" visible="false" />
+        <Button fx:id="inventory13" layoutX="1374.0" layoutY="815.0" mnemonicParsing="false" onAction="#inventory13_control" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="13" visible="false" />
+        <Button fx:id="door_key1" layoutX="997.0" layoutY="438.0" mnemonicParsing="false" onAction="#door_key1_control" text="Door key" visible="false" />
+        <Button fx:id="door_key2" layoutX="601.0" layoutY="447.0" mnemonicParsing="false" onAction="#door_key2_control" text="Door key2" visible="false" />
+        <ImageView fx:id="image1" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="118.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image2" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="215.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image3" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="321.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image4" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="423.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image5" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="527.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image6" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="632.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image7" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="735.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image8" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="839.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image9" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="942.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image10" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="1052.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image11" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="1157.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image12" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="1264.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="image13" disable="true" fitHeight="68.0" fitWidth="80.0" layoutX="1374.0" layoutY="815.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="idoor1" disable="true" fitHeight="543.0" fitWidth="225.0" layoutX="236.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url(&quot;https://image.shutterstock.com/image-vector/door-line-art-260nw-193280339.jpg&quot;);" visible="false" />
+        <Button fx:id="b_start" layoutX="1313.0" layoutY="317.0" mnemonicParsing="false" onAction="#startController" text="new game" />
+        <Button fx:id="b_continue" layoutX="1313.0" layoutY="426.0" mnemonicParsing="false" onAction="#continueController" text="continue" />
+        <Button fx:id="save" layoutX="1519.0" layoutY="14.0" mnemonicParsing="false" onAction="#data_save" text="Save" />
+    </children>
+</AnchorPane>
