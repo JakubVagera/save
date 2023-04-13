@@ -1,0 +1,315 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="pane" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV1alZO4WqP6m7gawhxRELZrVvEPM3wjbLSeeoX08D69s4wstv2cdxNNaCUD2LJLVflea_OU_pBQjBB0Z_CV5ovnPkHwswcs1x8thxDGlRKg4umU-34mCcq_ZsPCIGvWb_v9uoiabzin-meFVScqGq4eFhsCv-1554ntoE-T6olrMhBxEVG9Y6J2xs/s16000/Br.jpg");" fx:controller="com.example.puzzlegame.HelloController">
+<children>
+<Button fx:id="right" layoutX="1505.0" layoutY="476.0" mnemonicParsing="false" onAction="#rightButton" prefHeight="56.0" prefWidth="56.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em;" text="-->" visible="false"/>
+<Button fx:id="left" layoutX="32.0" layoutY="481.0" mnemonicParsing="false" onAction="#leftButton" prefHeight="56.0" prefWidth="62.0" style="-fx-background-radius: 5em;" text="<--" visible="false"/>
+<Label fx:id="Text" text="A"/>
+<Button fx:id="door" layoutX="690.0" layoutY="205.0" mnemonicParsing="false" onAction="#door_control" prefHeight="517.0" prefWidth="214.0" style="-fx-background-image: url("A_door.jpg");" text="Door" visible="false"/>
+<Button fx:id="inventory1" layoutX="23.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory1_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="1" visible="false"/>
+<Button fx:id="inventory2" layoutX="129.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory2_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="2" visible="false"/>
+<Button fx:id="inventory3" layoutX="238.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory3_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="3" visible="false"/>
+<Button fx:id="inventory4" layoutX="347.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory4_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="4" visible="false"/>
+<Button fx:id="inventory5" layoutX="457.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory5_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="5" visible="false"/>
+<Button fx:id="inventory6" layoutX="564.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory6_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="6" visible="false"/>
+<Button fx:id="inventory7" layoutX="674.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory7_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="7" visible="false"/>
+<Button fx:id="inventory8" layoutX="783.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory8_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="8" visible="false"/>
+<Button fx:id="inventory9" layoutX="893.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory9_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="9" visible="false"/>
+<Button fx:id="inventory10" layoutX="1002.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory10_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="10" visible="false"/>
+<Button fx:id="inventory11" layoutX="1111.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory11_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="11" visible="false"/>
+<Button fx:id="inventory12" layoutX="1221.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory12_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="12" visible="false"/>
+<Button fx:id="inventory13" layoutX="1330.0" layoutY="809.0" mnemonicParsing="false" onAction="#inventory13_control" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="13" visible="false"/>
+<Button fx:id="door_key1" layoutX="997.0" layoutY="438.0" mnemonicParsing="false" onAction="#door_key1_control" text="Door key" visible="false"/>
+<Button fx:id="door_key2" layoutX="601.0" layoutY="447.0" mnemonicParsing="false" onAction="#door_key2_control" text="Door key2" visible="false"/>
+<ImageView fx:id="image1" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="23.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image2" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="129.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image3" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="238.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image4" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="347.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image5" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="457.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image6" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="564.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image7" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="674.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image8" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="783.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image9" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="893.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image10" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="1002.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image11" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="1111.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image12" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="1221.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="image13" disable="true" fitHeight="68.0" fitWidth="68.0" layoutX="1330.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="idoor1" disable="true" fitHeight="523.0" fitWidth="257.0" layoutX="693.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<Button fx:id="b_start" layoutX="1313.0" layoutY="317.0" mnemonicParsing="false" onAction="#startController" text="new game"/>
+<Button fx:id="b_continue" layoutX="1313.0" layoutY="426.0" mnemonicParsing="false" onAction="#continueController" text="continue"/>
+<Button fx:id="save" layoutX="1462.0" layoutY="799.0" mnemonicParsing="false" onAction="#data_save" prefHeight="90.0" prefWidth="86.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em;" text="Save"/>
+<Button fx:id="A2_close" layoutX="178.0" layoutY="559.0" mnemonicParsing="false" onAction="#A2_close_action" prefHeight="148.0" prefWidth="154.0" style="-fx-background-image: url("A2_close.jpg");" visible="false"/>
+<Button fx:id="A2_open" layoutX="94.0" layoutY="534.0" mnemonicParsing="false" onAction="#A2_open_action" prefHeight="188.0" prefWidth="75.0" style="-fx-background-image: url("A2_open.jpg");" visible="false"/>
+<ImageView fx:id="Aa2_close" fitHeight="742.0" fitWidth="1034.0" layoutX="396.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-2.close.jpg");" visible="false"/>
+<Button fx:id="b_Aa2_1" layoutX="549.0" layoutY="366.0" mnemonicParsing="false" onAction="#b_Aa2_1onAction" prefHeight="107.0" prefWidth="105.0" text="0" visible="false"/>
+<Button fx:id="b_Aa2_2" layoutX="712.0" layoutY="366.0" mnemonicParsing="false" onAction="#b_Aa2_2onAction" prefHeight="113.0" prefWidth="105.0" text="0" visible="false"/>
+<Button fx:id="b_Aa2_3" layoutX="873.0" layoutY="366.0" mnemonicParsing="false" onAction="#b_Aa2_3onAction" prefHeight="107.0" prefWidth="105.0" text="0" visible="false"/>
+<Button fx:id="b_Aa2_4" layoutX="1049.0" layoutY="366.0" mnemonicParsing="false" onAction="#b_Aa2_4onAction" prefHeight="107.0" prefWidth="105.0" text="0" visible="false"/>
+<ImageView fx:id="Aa2_open" fitHeight="754.0" fitWidth="348.0" layoutX="50.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-2.open.jpg");" visible="false"/>
+<ImageView fx:id="Thing1_A" fitHeight="150.0" fitWidth="180.0" layoutX="363.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("Thing1.jpg");" visible="false"/>
+<Button fx:id="Thing1_a" layoutX="305.0" layoutY="370.0" mnemonicParsing="false" onAction="#Thing1onAction" prefHeight="393.0" prefWidth="420.0" style="-fx-background-image: url("Thing1a.jpg");" visible="false"/>
+<Button fx:id="A1" layoutX="373.0" layoutY="561.0" mnemonicParsing="false" onAction="#A1onAction" prefHeight="135.0" prefWidth="154.0" style="-fx-background-image: url("A1_close.jpg");" visible="false"/>
+<ImageView fx:id="A1_open" fitHeight="188.0" fitWidth="62.0" layoutX="554.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A1_open.jpg");" visible="false"/>
+<ImageView fx:id="Aa1_close" fitHeight="756.0" fitWidth="1022.0" layoutX="194.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-1.close.jpg");" visible="false"/>
+<ImageView fx:id="Aa1_open" fitHeight="763.0" fitWidth="357.0" layoutX="1215.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-1.open.jpg");" visible="false"/>
+<ImageView fx:id="Aa1_im1" fitHeight="113.0" fitWidth="105.0" layoutX="502.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im2" fitHeight="113.0" fitWidth="105.0" layoutX="640.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im3" fitHeight="113.0" fitWidth="105.0" layoutX="770.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im4" fitHeight="113.0" fitWidth="105.0" layoutX="900.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im5" fitHeight="113.0" fitWidth="105.0" layoutX="502.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im6" fitHeight="113.0" fitWidth="105.0" layoutX="640.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im7" fitHeight="113.0" fitWidth="105.0" layoutX="770.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im8" fitHeight="113.0" fitWidth="105.0" layoutX="900.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im9" fitHeight="113.0" fitWidth="105.0" layoutX="502.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im10" fitHeight="113.0" fitWidth="105.0" layoutX="640.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im11" fitHeight="113.0" fitWidth="105.0" layoutX="770.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<ImageView fx:id="Aa1_im12" fitHeight="113.0" fitWidth="105.0" layoutX="900.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<Button fx:id="Aa1_b1" layoutX="523.0" layoutY="135.0" mnemonicParsing="false" onAction="#Aa1_b1onAction" prefHeight="56.0" prefWidth="62.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b2" layoutX="659.0" layoutY="135.0" mnemonicParsing="false" onAction="#Aa1_b2onAction" prefHeight="56.0" prefWidth="62.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b3" layoutX="800.0" layoutY="135.0" mnemonicParsing="false" onAction="#Aa1_b3onAction" prefHeight="56.0" prefWidth="62.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b4" layoutX="922.0" layoutY="135.0" mnemonicParsing="false" onAction="#Aa1_b4onAction" prefHeight="56.0" prefWidth="62.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b5" layoutX="1033.0" layoutY="257.0" mnemonicParsing="false" onAction="#Aa1_b5onAction" prefHeight="56.0" prefWidth="62.0" rotate="90.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b6" layoutX="1033.0" layoutY="395.0" mnemonicParsing="false" onAction="#Aa1_b6onAction" prefHeight="56.0" prefWidth="62.0" rotate="90.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b7" layoutX="1033.0" layoutY="539.0" mnemonicParsing="false" onAction="#Aa1_b7onAction" prefHeight="56.0" prefWidth="62.0" rotate="90.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b8" layoutX="926.0" layoutY="657.0" mnemonicParsing="false" onAction="#Aa1_b8onAction" prefHeight="56.0" prefWidth="62.0" rotate="180.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b9" layoutX="800.0" layoutY="657.0" mnemonicParsing="false" onAction="#Aa1_b9onAction" prefHeight="56.0" prefWidth="62.0" rotate="180.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b10" layoutX="662.0" layoutY="657.0" mnemonicParsing="false" onAction="#Aa1_b10onAction" prefHeight="56.0" prefWidth="62.0" rotate="180.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b11" layoutX="523.0" layoutY="657.0" mnemonicParsing="false" onAction="#Aa1_b11onAction" prefHeight="56.0" prefWidth="62.0" rotate="180.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b12" layoutX="404.0" layoutY="539.0" mnemonicParsing="false" onAction="#Aa1_b12onAction" prefHeight="56.0" prefWidth="62.0" rotate="270.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b13" layoutX="404.0" layoutY="398.0" mnemonicParsing="false" onAction="#Aa1_b13onAction" prefHeight="56.0" prefWidth="62.0" rotate="270.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Aa1_b14" layoutX="404.0" layoutY="257.0" mnemonicParsing="false" onAction="#Aa1_b14onAction" prefHeight="56.0" prefWidth="62.0" rotate="270.0" style="-fx-background-image: url("A-1.button.png");-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="i_help" fitHeight="68.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<Button fx:id="Aa1_open_b" layoutX="1304.0" layoutY="457.0" mnemonicParsing="false" onAction="#Aa1_open_bonAction" prefHeight="84.0" prefWidth="172.0" text="Open" visible="false"/>
+<Button fx:id="Bb3_im_code1" layoutX="581.0" layoutY="295.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="368.0" visible="false"/>
+<Button fx:id="Bb3_im_code2" layoutX="582.0" layoutY="377.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="368.0" visible="false"/>
+<Button fx:id="Bb3_im_code3" layoutX="582.0" layoutY="463.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="368.0" visible="false"/>
+<Button fx:id="B3_im_code1" layoutX="1166.0" layoutY="555.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" visible="false"/>
+<Button fx:id="B3_im_code2" layoutX="1166.0" layoutY="578.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" visible="false"/>
+<Button fx:id="B3_im_code3" layoutX="1166.0" layoutY="604.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" visible="false"/>
+<Button fx:id="B1a_close" layoutX="1038.0" layoutY="138.0" mnemonicParsing="false" onAction="#B1onAction" prefHeight="196.0" prefWidth="200.0" style="-fx-background-image: url("B1aclose.jpg");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="B1b_close" layoutX="1230.0" layoutY="138.0" mnemonicParsing="false" onAction="#B1onAction" prefHeight="196.0" prefWidth="195.0" style="-fx-background-image: url("B1b.close.jpg");-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="B1a_open" fitHeight="238.0" fitWidth="62.0" layoutX="984.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B1aopen.jpg");" visible="false"/>
+<ImageView fx:id="B1b_open" fitHeight="246.0" fitWidth="62.0" layoutX="1425.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B1b.open.jpg");" visible="false"/>
+<Button fx:id="Bb1a_close" layoutX="204.0" layoutY="34.0" mnemonicParsing="false" onAction="#Bb1a_closeonAction" prefHeight="664.0" prefWidth="587.0" style="-fx-background-image: url("B-1a.close.jpg");" visible="false"/>
+<Button fx:id="Bb1b_close" layoutX="781.0" layoutY="34.0" mnemonicParsing="false" onAction="#Bb1b_closeonAction" prefHeight="664.0" prefWidth="601.0" style="-fx-background-image: url("B-1b.close.jpg");" visible="false"/>
+<Button fx:id="Bb1a_open" layoutX="44.0" layoutY="32.0" mnemonicParsing="false" onAction="#Bb1a_openonAction" prefHeight="695.0" prefWidth="166.0" style="-fx-background-image: url("B-1a.open.jpg");" visible="false"/>
+<Button fx:id="Bb1b_open" layoutX="1388.0" layoutY="32.0" mnemonicParsing="false" onAction="#Bb1b_openonAction" prefHeight="701.0" prefWidth="160.0" style="-fx-background-image: url("B-1b.open.jpg");" visible="false"/>
+<Button fx:id="b_return" layoutX="38.0" layoutY="650.0" mnemonicParsing="false" onAction="#returnButton" prefHeight="50.0" prefWidth="62.0" style="-fx-background-radius: 5em; -fx-background-insets: 10;" text="R" visible="false"/>
+<Button fx:id="B2" layoutX="1043.0" layoutY="337.0" mnemonicParsing="false" onAction="#B2onAction" prefHeight="135.0" prefWidth="376.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="B3" layoutX="1043.0" layoutY="479.0" mnemonicParsing="false" onAction="#B3onAction" prefHeight="230.0" prefWidth="376.0" style="-fx-background-image: url("B3_close.jpg");" visible="false"/>
+<ImageView fx:id="Bb3_door_down" fitHeight="299.0" fitWidth="1075.0" layoutX="261.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.door.down.jpg");" visible="false"/>
+<ImageView fx:id="Bb3_door_up" fitHeight="308.0" fitWidth="1075.0" layoutX="261.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.door.up.jpg");" visible="false"/>
+<ImageView fx:id="Bb3_im1_up" fitHeight="327.0" fitWidth="124.0" layoutX="349.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.part.up.png");" visible="false"/>
+<ImageView fx:id="Bb3_im1_down" fitHeight="327.0" fitWidth="172.0" layoutX="350.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.part.down.png");" visible="false"/>
+<ImageView fx:id="Bb3_im3_down" fitHeight="327.0" fitWidth="200.0" layoutX="852.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.part.down.png");" visible="false"/>
+<ImageView fx:id="Bb3_im3_up" fitHeight="327.0" fitWidth="200.0" layoutX="852.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.part.up.png");" visible="false"/>
+<ImageView fx:id="Bb3_im4_down" fitHeight="327.0" fitWidth="200.0" layoutX="1102.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" style="-fx-image: url("B-3.part.up.png");" visible="false"/>
+<ImageView fx:id="Bb3_im2_down" fitHeight="327.0" fitWidth="200.0" layoutX="604.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" style="-fx-image: url("B-3.part.up.png");" visible="false"/>
+<ImageView fx:id="Bb3_im4_up" fitHeight="327.0" fitWidth="200.0" layoutX="1102.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" style="-fx-image: url("B-3.part.down.png");" visible="false"/>
+<ImageView fx:id="Bb3_im2_up" fitHeight="327.0" fitWidth="200.0" layoutX="604.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" style="-fx-image: url("B-3.part.down.png");" visible="false"/>
+<ImageView fx:id="Bb3_back" fitHeight="900.0" fitWidth="1175.0" layoutX="215.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("B-3.z.png");" visible="false"/>
+<Button fx:id="Bb3_b1" layoutX="365.0" layoutY="56.0" mnemonicParsing="false" onAction="#Bb3_b1onAction" prefHeight="44.0" prefWidth="92.0" visible="false"/>
+<Button fx:id="Bb3_b2" layoutX="613.0" layoutY="56.0" mnemonicParsing="false" onAction="#Bb3_b2onAction" prefHeight="44.0" prefWidth="92.0" visible="false"/>
+<Button fx:id="Bb3_b3" layoutX="862.0" layoutY="56.0" mnemonicParsing="false" onAction="#Bb3_b3onAction" prefHeight="50.0" prefWidth="92.0" visible="false"/>
+<Button fx:id="Bb3_b4" layoutX="1107.0" layoutY="56.0" mnemonicParsing="false" onAction="#Bb3_b4onAction" prefHeight="50.0" prefWidth="105.0" visible="false"/>
+<Button fx:id="Bb3_b5" layoutX="365.0" layoutY="710.0" mnemonicParsing="false" onAction="#Bb3_b5onAction" prefHeight="50.0" prefWidth="111.0" visible="false"/>
+<Button fx:id="Bb3_b6" layoutX="613.0" layoutY="710.0" mnemonicParsing="false" onAction="#Bb3_b6onAction" prefHeight="50.0" prefWidth="105.0" visible="false"/>
+<Button fx:id="Bb3_b7" layoutX="873.0" layoutY="710.0" mnemonicParsing="false" onAction="#Bb3_b7onAction" prefHeight="50.0" prefWidth="92.0" visible="false"/>
+<Button fx:id="Bb3_b8" layoutX="1117.0" layoutY="708.0" mnemonicParsing="false" onAction="#Bb3_b8onAction" prefHeight="50.0" prefWidth="98.0" visible="false"/>
+<Button fx:id="C1_b1" layoutX="944.0" layoutY="111.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.1.jpg");" visible="false"/>
+<Button fx:id="C1_b2" layoutX="1040.0" layoutY="111.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.2.jpg");" visible="false"/>
+<Button fx:id="C1_b3" layoutX="1136.0" layoutY="111.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.3.jpg");" visible="false"/>
+<Button fx:id="C1_b4" layoutX="944.0" layoutY="207.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.4.jpg");" visible="false"/>
+<Button fx:id="C1_b5" layoutX="1040.0" layoutY="207.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.5.jpg");" visible="false"/>
+<Button fx:id="C1_b6" layoutX="1136.0" layoutY="207.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.6.jpg");" visible="false"/>
+<Button fx:id="C1_b7" layoutX="944.0" layoutY="303.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" visible="false"/>
+<Button fx:id="C1_b8" layoutX="1040.0" layoutY="303.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.8.jpg");" visible="false"/>
+<Button fx:id="C1_b9" layoutX="1136.0" layoutY="303.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="96.0" prefWidth="96.0" style="-fx-background-image: url("C1.9.jpg");" visible="false"/>
+<Button fx:id="C1_door" layoutX="790.0" layoutY="351.0" mnemonicParsing="false" onAction="#C1onAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-image: url("C1.door.close.jpg");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Cc1_b1" layoutX="452.0" layoutY="64.0" mnemonicParsing="false" onAction="#Cc1_b1onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.1.jpg");" visible="false"/>
+<Button fx:id="Cc1_b2" layoutX="677.0" layoutY="64.0" mnemonicParsing="false" onAction="#Cc1_b2onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.2.jpg");" visible="false"/>
+<Button fx:id="Cc1_b3" layoutX="902.0" layoutY="64.0" mnemonicParsing="false" onAction="#Cc1_b3onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.3.jpg");" visible="false"/>
+<Button fx:id="Cc1_b4" layoutX="452.0" layoutY="289.0" mnemonicParsing="false" onAction="#Cc1_b4onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.4.jpg");" visible="false"/>
+<Button fx:id="Cc1_b5" layoutX="677.0" layoutY="289.0" mnemonicParsing="false" onAction="#Cc1_b5onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.5.jpg");" visible="false"/>
+<Button fx:id="Cc1_b6" layoutX="902.0" layoutY="289.0" mnemonicParsing="false" onAction="#Cc1_b6onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.6.jpg");" visible="false"/>
+<Button fx:id="Cc1_b7" layoutX="452.0" layoutY="514.0" mnemonicParsing="false" onAction="#Cc1_b7onAction" prefHeight="225.0" prefWidth="225.0" visible="false"/>
+<Button fx:id="Cc1_b8" layoutX="677.0" layoutY="514.0" mnemonicParsing="false" onAction="#Cc1_b8onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.8.jpg");" visible="false"/>
+<Button fx:id="Cc1_b9" layoutX="902.0" layoutY="514.0" mnemonicParsing="false" onAction="#Cc1_b9onAction" prefHeight="225.0" prefWidth="225.0" style="-fx-background-image: url("C-1.9.jpg");" visible="false"/>
+<Button fx:id="Cc1_door" layoutX="54.0" layoutY="567.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="316.0" style="-fx-background-image: url("C-1.door.jpg");" visible="false"/>
+<Button fx:id="C3" layoutX="1002.0" layoutY="476.0" mnemonicParsing="false" onAction="#C3onAction" prefHeight="99.0" prefWidth="172.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Cc3_b1" layoutX="686.0" layoutY="249.0" mnemonicParsing="false" onAction="#Cc3_b1onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="7" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b2" layoutX="801.0" layoutY="249.0" mnemonicParsing="false" onAction="#Cc3_b2onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="8" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b3" layoutX="919.0" layoutY="249.0" mnemonicParsing="false" onAction="#Cc3_b3onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="9" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b4" layoutX="683.0" layoutY="313.0" mnemonicParsing="false" onAction="#Cc3_b4onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="4" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b5" layoutX="804.0" layoutY="312.0" mnemonicParsing="false" onAction="#Cc3_b5onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="5" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b6" layoutX="927.0" layoutY="311.0" mnemonicParsing="false" onAction="#Cc3_b6onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="6" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b7" layoutX="687.0" layoutY="377.0" mnemonicParsing="false" onAction="#Cc3_b7onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="1" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b8" layoutX="812.0" layoutY="373.0" mnemonicParsing="false" onAction="#Cc3_b8onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="2" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Button fx:id="Cc3_b9" layoutX="936.0" layoutY="374.0" mnemonicParsing="false" onAction="#Cc3_b9onAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="3" visible="false">
+<font>
+<Font size="23.0"/>
+</font>
+</Button>
+<Label fx:id="Cc3_text" alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="566.0" prefHeight="96.0" prefWidth="400.0" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="false">
+<font>
+<Font size="53.0"/>
+</font>
+</Label>
+<Button fx:id="C2" layoutX="710.0" layoutY="440.0" mnemonicParsing="false" onAction="#C2onAction" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="C4" layoutX="1240.0" layoutY="440.0" mnemonicParsing="false" onAction="#C4onAction" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Cc2_b" layoutX="500.0" layoutY="420.0" mnemonicParsing="false" onAction="#Cc2_bonAction" prefHeight="130.0" prefWidth="400.0" style="-fx-background-image: url("C-2.pillow.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Cc4_b" layoutX="800.0" layoutY="405.0" mnemonicParsing="false" onAction="#Cc4_bonAction" prefHeight="148.0" prefWidth="394.0" style="-fx-background-image: url("C-4,pillow.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="D1" layoutX="1107.0" layoutY="550.0" mnemonicParsing="false" onAction="#D1onAction" prefHeight="188.0" prefWidth="273.0" style="-fx-background-image: url("D1.close.jpg");" visible="false"/>
+<Button fx:id="Dd1" layoutX="598.0" layoutY="147.0" mnemonicParsing="false" onAction="#Dd1onAction" prefHeight="558.0" prefWidth="816.0" style="-fx-background-image: url("D-1.close.jpg");" visible="false"/>
+<Button fx:id="Dd1d1_b1" layoutX="644.0" layoutY="555.0" mnemonicParsing="false" onAction="#Dd1d1_b1onAction" prefHeight="68.0" prefWidth="77.0" visible="false"/>
+<Button fx:id="Dd1d1_b2" layoutX="741.0" layoutY="555.0" mnemonicParsing="false" onAction="#Dd1d1_b2onAction" prefHeight="68.0" prefWidth="75.0" visible="false"/>
+<Button fx:id="Dd1d1_b3" layoutX="831.0" layoutY="555.0" mnemonicParsing="false" onAction="#Dd1d1_b3onAction" prefHeight="68.0" prefWidth="75.0" visible="false"/>
+<Button fx:id="Dd1d1_b4" layoutX="934.0" layoutY="554.0" mnemonicParsing="false" onAction="#Dd1d1_b4onAction" prefHeight="68.0" prefWidth="80.0" visible="false"/>
+<ImageView fx:id="C_door_open" fitHeight="559.0" fitWidth="265.0" layoutX="163.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("C.door.open.png");" visible="false"/>
+<Button fx:id="C_door" layoutX="233.0" layoutY="201.0" mnemonicParsing="false" onAction="#C_dooronAction" prefHeight="505.0" prefWidth="214.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="E_door" layoutX="1123.0" layoutY="210.0" mnemonicParsing="false" onAction="#E_dooronAction" prefHeight="511.0" prefWidth="225.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="E3" layoutX="613.0" layoutY="529.0" mnemonicParsing="false" onAction="#E3onAction" prefHeight="196.0" prefWidth="160.0" style="-fx-background-image: url("E3.close.jpg");" visible="false"/>
+<ImageView fx:id="E3_open" fitHeight="238.0" fitWidth="62.0" layoutX="779.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("E3.open.jpg");" visible="false"/>
+<ImageView fx:id="Ee3_close" fitHeight="748.0" fitWidth="762.0" layoutX="449.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("E-3.close.jpg");" visible="false"/>
+<ImageView fx:id="Ee3_open" fitHeight="756.0" fitWidth="331.0" layoutX="1213.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("E-3.open.jpg");" visible="false"/>
+<Button fx:id="Ee3_b1" layoutX="514.0" layoutY="147.0" mnemonicParsing="false" onAction="#Ee3_b1onAction" prefHeight="90.0" prefWidth="92.0" visible="false"/>
+<Button fx:id="Ee3_b2" layoutX="669.0" layoutY="147.0" mnemonicParsing="false" onAction="#Ee3_b2onAction" prefHeight="90.0" prefWidth="98.0" visible="false"/>
+<Button fx:id="Ee3_b3" layoutX="850.0" layoutY="143.0" mnemonicParsing="false" onAction="#Ee3_b3onAction" prefHeight="90.0" prefWidth="98.0" visible="false"/>
+<Button fx:id="Ee3_b4" layoutX="1033.0" layoutY="143.0" mnemonicParsing="false" onAction="#Ee3_b4onAction" prefHeight="90.0" prefWidth="92.0" visible="false"/>
+<Button fx:id="E2_b1" layoutX="188.0" layoutY="529.0" mnemonicParsing="false" onAction="#E2onAction" prefHeight="76.0" prefWidth="180.0" visible="false"/>
+<Button fx:id="E2_b3" layoutX="185.0" layoutY="604.0" mnemonicParsing="false" onAction="#E2onAction" prefHeight="62.0" prefWidth="186.0" visible="false"/>
+<Button fx:id="E2_b2" layoutX="184.0" layoutY="663.0" mnemonicParsing="false" onAction="#E2onAction" prefHeight="68.0" prefWidth="186.0" visible="false"/>
+<Button fx:id="Ee2_b1" layoutX="367.0" layoutY="37.0" mnemonicParsing="false" onAction="#Ee2_b1onAction" prefHeight="263.0" prefWidth="761.0" visible="false"/>
+<Button fx:id="Ee2_b2" layoutX="365.0" layoutY="546.0" mnemonicParsing="false" onAction="#Ee2_b2onAction" prefHeight="238.0" prefWidth="768.0" visible="false"/>
+<Button fx:id="Ee2_b3" layoutX="365.0" layoutY="302.0" mnemonicParsing="false" onAction="#Ee2_b3onAction" prefHeight="246.0" prefWidth="768.0" visible="false"/>
+<Button fx:id="E1" layoutX="365.0" layoutY="529.0" mnemonicParsing="false" onAction="#E1onAction" prefHeight="37.0" prefWidth="257.0" visible="false"/>
+<ImageView fx:id="Ee1_door" fitHeight="284.0" fitWidth="1437.0" layoutX="78.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<Button fx:id="Ee1_b1" layoutX="290.0" layoutY="269.0" mnemonicParsing="false" onAction="#Ee1_b1onAction" prefHeight="238.0" prefWidth="77.0" style="-fx-background-image: url("E-1.key.up.jpg");" visible="false"/>
+<Button fx:id="Ee1_b2" layoutX="362.0" layoutY="268.0" mnemonicParsing="false" onAction="#Ee1_b2onAction" prefHeight="238.0" prefWidth="77.0" style="-fx-background-image: url("E-1.key.up.jpg");" visible="false"/>
+<Button fx:id="Ee1_b3" layoutX="438.0" layoutY="269.0" mnemonicParsing="false" onAction="#Ee1_b3onAction" prefHeight="238.0" prefWidth="77.0" style="-fx-background-image: url("E-1.key.up.jpg");" visible="false"/>
+<Button fx:id="Ee1_b4" layoutX="515.0" layoutY="268.0" mnemonicParsing="false" onAction="#Ee1_b4onAction" prefHeight="238.0" prefWidth="77.0" style="-fx-background-image: url("E-1.key.up.jpg");" visible="false"/>
+<Button fx:id="Ee1_b5" layoutX="591.0" layoutY="269.0" mnemonicParsing="false" onAction="#Ee1_b5onAction" prefHeight="238.0" prefWidth="77.0" style="-fx-background-image: url("E-1.key.up.jpg");" visible="false"/>
+<Button fx:id="Ee1_reset" layoutX="766.0" layoutY="339.0" mnemonicParsing="false" onAction="#Ee1_resetonAction" prefHeight="76.0" prefWidth="98.0" text="reset" visible="false"/>
+<Button fx:id="F1" layoutX="472.0" layoutY="376.0" mnemonicParsing="false" onAction="#F1onAction" prefHeight="68.0" prefWidth="154.0" visible="false"/>
+<Button fx:id="F2_b1" layoutX="1209.0" layoutY="463.0" mnemonicParsing="false" onAction="#F2onAction" prefHeight="92.0" prefWidth="92.0" style="-fx-background-image: url("F2.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="F2_b2" layoutX="971.0" layoutY="467.0" mnemonicParsing="false" onAction="#F2onAction" prefHeight="92.0" prefWidth="92.0" style="-fx-background-image: url("F2.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="F2_b3" layoutX="1092.0" layoutY="355.0" mnemonicParsing="false" onAction="#F2onAction" prefHeight="92.0" prefWidth="92.0" style="-fx-background-image: url("F2.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="F2_b4" layoutX="844.0" layoutY="363.0" mnemonicParsing="false" onAction="#F2onAction" prefHeight="92.0" prefWidth="92.0" style="-fx-background-image: url("F2.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Ff1" layoutX="693.0" layoutY="193.0" mnemonicParsing="false" onAction="#Ff1onAction" prefHeight="393.0" prefWidth="669.0" visible="false"/>
+<Button fx:id="Ff1f1_b1" layoutX="289.0" layoutY="369.0" mnemonicParsing="false" onAction="#Ff1f1_b1onAction" prefHeight="254.0" prefWidth="264.0" style="-fx-background-image: url("F-1.1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Ff1f1_b2" layoutX="1204.0" layoutY="371.0" mnemonicParsing="false" onAction="#Ff1f1_b2onAction" prefHeight="254.0" prefWidth="264.0" style="-fx-background-image: url("F-1.1.button.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="F2_door" layoutX="1355.0" layoutY="373.0" mnemonicParsing="false" onAction="#F2onAction" prefHeight="107.0" prefWidth="45.0" style="-fx-background-image: url("F2.door.jpg");" visible="false"/>
+<Button fx:id="Ff2_b1" layoutX="407.0" layoutY="221.0" mnemonicParsing="false" onAction="#Ff2_b1onAction" prefHeight="144.0" prefWidth="156.0" style="-fx-background-image: url("F-2.button.jpg");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Ff2_b2" layoutX="919.0" layoutY="221.0" mnemonicParsing="false" onAction="#Ff2_b2onAction" prefHeight="144.0" prefWidth="156.0" style="-fx-background-image: url("F-2.button.jpg");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Ff2_b3" layoutX="562.0" layoutY="503.0" mnemonicParsing="false" onAction="#Ff2_b3onAction" prefHeight="144.0" prefWidth="156.0" style="-fx-background-image: url("F-2.button.jpg");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Ff2_b4" layoutX="1076.0" layoutY="503.0" mnemonicParsing="false" onAction="#Ff2_b4onAction" prefHeight="144.0" prefWidth="156.0" style="-fx-background-image: url("F-2.button.jpg");-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="Ff2_door" fitHeight="173.0" fitWidth="80.0" layoutX="1379.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("F-2.door.jpg");" visible="false"/>
+<ImageView fx:id="G1_ring1" fitHeight="404.0" fitWidth="420.0" layoutX="626.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("G1.button.1.png");-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="G1_ring2" fitHeight="316.0" fitWidth="316.0" layoutX="666.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("G1.button.2.png");-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="G1_ring3" fitHeight="254.0" fitWidth="233.0" layoutX="708.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("G1.button.3.png");-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="G1_ring4" fitHeight="157.0" fitWidth="160.0" layoutX="747.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("G1.button.4.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="G1_touch_area" layoutX="595.0" layoutY="176.0" mnemonicParsing="false" onAction="#G1_touch_areaonAction" prefHeight="420.0" prefWidth="430.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="G1_button" layoutX="1025.0" layoutY="563.0" mnemonicParsing="false" onAction="#G1_touch_areaonAction" prefHeight="130.0" prefWidth="130.0" style="-fx-background-image: url("G-1.door.jpg");" visible="false"/>
+<Button fx:id="Gg1_b1" layoutX="306.0" layoutY="47.0" mnemonicParsing="false" prefHeight="707.0" prefWidth="715.0" style="-fx-background-image: url("G-1.button.1.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Gg1_b2" layoutX="381.0" layoutY="125.0" mnemonicParsing="false" prefHeight="543.0" prefWidth="564.0" style="-fx-background-image: url("G-1.button.2.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Gg1_b3" layoutX="460.0" layoutY="222.0" mnemonicParsing="false" prefHeight="364.0" prefWidth="368.0" style="-fx-background-image: url("G-1.button.3.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Gg1_b4" layoutX="547.0" layoutY="291.0" mnemonicParsing="false" prefHeight="208.0" prefWidth="214.0" style="-fx-background-image: url("G1.button.3.png");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Gg1_door" layoutX="1206.0" layoutY="681.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="250.0" style="-fx-background-image: url("G-1.door.jpg");-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Gg1_b_1" layoutX="1059.0" layoutY="193.0" mnemonicParsing="false" onAction="#Gg1_b1onAction" text="1." visible="false"/>
+<Button fx:id="Gg1_b_2" layoutX="1059.0" layoutY="218.0" mnemonicParsing="false" onAction="#Gg1_b2onAction" text="2." visible="false"/>
+<Button fx:id="Gg1_b_3" layoutX="1059.0" layoutY="243.0" mnemonicParsing="false" onAction="#Gg1_b3onAction" text="3." visible="false"/>
+<Button fx:id="Gg1_b_4" layoutX="1059.0" layoutY="269.0" mnemonicParsing="false" onAction="#Gg1_b4onAction" text="4." visible="false"/>
+<Button fx:id="H2" layoutX="361.0" layoutY="333.0" mnemonicParsing="false" onAction="#H2onAction" prefHeight="135.0" prefWidth="154.0" style="-fx-background-image: url("H2_door_close.png");" visible="false"/>
+<ImageView fx:id="H2_open" fitHeight="196.0" fitWidth="75.0" layoutX="286.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("H2.open.png");" visible="false"/>
+<Button fx:id="H1" layoutX="416.0" layoutY="598.0" mnemonicParsing="false" onAction="#H1onAction" prefHeight="56.0" prefWidth="45.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="H3" layoutX="1089.0" layoutY="625.0" mnemonicParsing="false" onAction="#H3onAction" prefHeight="92.0" prefWidth="85.0" style="-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="Hh2_open" fitHeight="543.0" fitWidth="316.0" layoutX="124.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("H-2.open.png");" visible="false"/>
+<Button fx:id="Hh2_b1a" layoutX="523.0" layoutY="428.0" mnemonicParsing="false" onAction="#Hh2_b1aonAction" prefHeight="37.0" prefWidth="56.0" visible="false"/>
+<Button fx:id="Hh2_b1b" layoutX="522.0" layoutY="517.0" mnemonicParsing="false" onAction="#Hh2_b1bonAction" prefHeight="37.0" prefWidth="56.0" visible="false"/>
+<Button fx:id="Hh2_b2a" layoutX="718.0" layoutY="428.0" mnemonicParsing="false" onAction="#Hh2_b2aonAction" prefHeight="37.0" prefWidth="56.0" visible="false"/>
+<Button fx:id="Hh2_b2b" layoutX="718.0" layoutY="517.0" mnemonicParsing="false" onAction="#Hh2_b2bonAction" prefHeight="37.0" prefWidth="56.0" visible="false"/>
+<Button fx:id="Hh2_b3a" layoutX="917.0" layoutY="428.0" mnemonicParsing="false" onAction="#Hh2_b3aonAction" prefHeight="37.0" prefWidth="56.0" visible="false"/>
+<Button fx:id="Hh2_b3b" layoutX="917.0" layoutY="510.0" mnemonicParsing="false" onAction="#Hh2_b3bonAction" prefHeight="44.0" prefWidth="56.0" visible="false"/>
+<Button fx:id="Hh2_b4a" layoutX="1126.0" layoutY="428.0" mnemonicParsing="false" onAction="#Hh2_b4aonAction" prefHeight="37.0" prefWidth="50.0" visible="false"/>
+<Button fx:id="Hh2_b4b" layoutX="1124.0" layoutY="517.0" mnemonicParsing="false" onAction="#Hh2_b4bonAction" prefHeight="37.0" prefWidth="50.0" visible="false"/>
+<Button fx:id="Hh2_1_color" layoutX="512.0" layoutY="243.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="77.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Hh2_2_color" layoutX="710.0" layoutY="243.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="75.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Hh2_3_color" layoutX="905.0" layoutY="243.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="80.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Hh2_4_color" layoutX="1107.0" layoutY="243.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="86.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="Hh2_close" layoutX="440.0" layoutY="189.0" mnemonicParsing="false" onAction="#H2_dooronAction" prefHeight="439.0" prefWidth="832.0" style="-fx-background-image: url("H-2.close.png");" visible="false"/>
+<Button fx:id="Hh1_b" layoutX="677.0" layoutY="307.0" mnemonicParsing="false" onAction="#Hh1_bonAction" prefHeight="196.0" prefWidth="250.0" visible="false"/>
+<Button fx:id="Hh3_b" layoutX="947.0" layoutY="355.0" mnemonicParsing="false" onAction="#Hh3_bonAction" prefHeight="308.0" prefWidth="301.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="A3" layoutX="690.0" layoutY="289.0" mnemonicParsing="false" onAction="#A3onAction" prefHeight="76.0" prefWidth="214.0" style="-fx-background-image: url("A3.jpg");" visible="false"/>
+<Button fx:id="A5" layoutX="690.0" layoutY="427.0" mnemonicParsing="false" onAction="#A5onAction" prefHeight="99.0" prefWidth="214.0" style="-fx-background-image: url("A5_close.jpg");" visible="false"/>
+<Button fx:id="A4" layoutX="919.0" layoutY="331.0" mnemonicParsing="false" onAction="#A4onAction" prefHeight="107.0" prefWidth="62.0" style="-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="A_door_open" fitHeight="558.0" fitWidth="145.0" layoutX="546.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A_door.open.jpg");" visible="false"/>
+<Button fx:id="Aa3_b1" layoutX="264.0" layoutY="337.0" mnemonicParsing="false" onAction="#A3_b1onAction" prefHeight="135.0" prefWidth="160.0" visible="false"/>
+<Button fx:id="Aa3_b2" layoutX="481.0" layoutY="337.0" mnemonicParsing="false" onAction="#A3_b2onAction" prefHeight="144.0" prefWidth="156.0" visible="false"/>
+<Button fx:id="Aa3_b3" layoutX="718.0" layoutY="337.0" mnemonicParsing="false" onAction="#A3_b3onAction" prefHeight="135.0" prefWidth="154.0" visible="false"/>
+<Button fx:id="Aa3_b4" layoutX="934.0" layoutY="337.0" mnemonicParsing="false" onAction="#A3_b4onAction" prefHeight="135.0" prefWidth="160.0" visible="false"/>
+<Button fx:id="Aa3_b5" layoutX="1162.0" layoutY="333.0" mnemonicParsing="false" onAction="#A3_b5onAction" prefHeight="148.0" prefWidth="160.0" visible="false"/>
+<Button fx:id="Aa5_wheel" layoutX="547.0" layoutY="183.0" mnemonicParsing="false" onAction="#Aa5_wheelonAction" prefHeight="497.0" prefWidth="488.0" style="-fx-background-image: url("A-5_wheel-removebg-preview2.png"); -fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="Aa5_up" fitHeight="99.0" fitWidth="420.0" layoutX="186.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-5_bar.jpg");" visible="false"/>
+<ImageView fx:id="Aa5_down" fitHeight="84.0" fitWidth="430.0" layoutX="942.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-5_bar.jpg");" visible="false"/>
+<Button fx:id="Aa4_b" layoutX="698.0" layoutY="180.0" mnemonicParsing="false" onAction="#Aa4_bonAction" prefHeight="439.0" prefWidth="207.0" style="-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="Aa4_card" fitHeight="150.0" fitWidth="45.0" layoutX="731.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("A-4-card.jpg");" visible="false"/>
+<ImageView fx:id="over_image" fitHeight="900.0" fitWidth="1600.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" visible="false"/>
+<Button fx:id="back" layoutX="193.0" layoutY="694.0" mnemonicParsing="false" onAction="#backonAction" prefHeight="62.0" prefWidth="130.0" text="back" visible="false"/>
+<ImageView fx:id="One" fitHeight="45.0" fitWidth="45.0" layoutX="343.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("one.png");" visible="false"/>
+<ImageView fx:id="Two" fitHeight="45.0" fitWidth="45.0" layoutX="343.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("two.png");" visible="false"/>
+<ImageView fx:id="Three" fitHeight="45.0" fitWidth="45.0" layoutX="343.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("three.png");" visible="false"/>
+<ImageView fx:id="Four" fitHeight="45.0" fitWidth="45.0" layoutX="343.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("four.png");" visible="false"/>
+<ImageView fx:id="Five" fitHeight="45.0" fitWidth="45.0" layoutX="343.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("five.png");" visible="false"/>
+<ImageView fx:id="Six" fitHeight="45.0" fitWidth="45.0" layoutX="343.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("six.png");" visible="false"/>
+<Label fx:id="Number_code_room_B" layoutX="540.0" layoutY="154.0" lineSpacing="1.0" prefHeight="378.0" prefWidth="292.0" text="9 5 6 4 1 6 4 4 5 6 4 6 4 6 1 9 3 7 5 1 5 8 8 5 7 9 3 4 2 1 2 3 4 5 8 6 8 9 1 6 1 6 7 8 6 5 4 9 9" textOverrun="CLIP" visible="false" wrapText="true">
+<font>
+<Font size="43.0"/>
+</font>
+</Label>
+<ImageView fx:id="H2_clue_1" fitHeight="181.0" fitWidth="127.0" layoutX="287.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("H2_clue.jpg");" visible="false"/>
+<ImageView fx:id="H2_clue_2" fitHeight="181.0" fitWidth="127.0" layoutX="464.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("H2_clue.jpg");" visible="false"/>
+<ImageView fx:id="H2_clue_3" fitHeight="181.0" fitWidth="127.0" layoutX="592.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("H2_clue.jpg");" visible="false"/>
+<ImageView fx:id="H2_clue_4" fitHeight="181.0" fitWidth="127.0" layoutX="799.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("H2_clue.jpg");" visible="false"/>
+<Button fx:id="Access_card" layoutX="631.0" layoutY="393.0" mnemonicParsing="false" onAction="#Thing3onAction" prefHeight="84.0" prefWidth="225.0" style="-fx-background-image: url("Access_card.jpg");" visible="false"/>
+<Button fx:id="Duct_tape" layoutX="625.0" layoutY="566.0" mnemonicParsing="false" onAction="#Thing2onAction" prefHeight="107.0" prefWidth="233.0" style="-fx-background-image: url("Duct_tape.jpg");" visible="false"/>
+<Button fx:id="D_mirror_unbroken" layoutX="759.0" layoutY="171.0" mnemonicParsing="false" onAction="#D_mirroronAction" prefHeight="334.0" prefWidth="154.0" style="-fx-background-image: url("D2_unbroken.jpg");" visible="false"/>
+<Button fx:id="H4" layoutX="1232.0" layoutY="216.0" mnemonicParsing="false" onAction="#H4onAction" prefHeight="208.0" prefWidth="172.0" style="-fx-background-color: transparent;" visible="false"/>
+<Button fx:id="D2" layoutX="301.0" layoutY="209.0" mnemonicParsing="false" onAction="#D2onAction" prefHeight="214.0" prefWidth="160.0" style="-fx-background-color: transparent;" visible="false"/>
+<ImageView fx:id="D_plant" fitHeight="115.0" fitWidth="90.0" layoutX="537.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("Model1_plant.jpg");" visible="false"/>
+<ImageView fx:id="=B_plant" fitHeight="115.0" fitWidth="90.0" layoutX="204.0" layoutY="518.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url("Model2_plant.jpg");"/>
+</children>
+</AnchorPane>
